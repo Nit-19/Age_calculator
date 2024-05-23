@@ -1,0 +1,131 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  font-family: 'Poppins-ExtraBold' ;
+  color: grey;
+}
+
+.main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(65, 64, 64);
+}
+
+.black{
+  color: black !important;
+  font-style: italic !important;
+}
+
+.card{
+  width: 500px;
+  height: 430px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 16px 16px 130px 16px;
+  padding: 40px;
+}
+
+.input_div{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  padding: 40px 0 ;
+  border-bottom: 1px solid grey;
+  position: relative;
+}
+
+.card button{
+  position: relative;
+  bottom: 66px;
+  padding: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(115, 25, 250, 0.858);
+  color: white;
+  cursor: pointer;
+  transform: translateY(50%);
+}
+.button{
+  place-self: flex-end;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.direction{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media screen and (max-width : 720px){
+  .button{
+    place-self: center;
+  }
+  .card{
+    width: 400px;
+    height: 450px;
+  }
+  .input_div{
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.input{
+  width: 95px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 15px;
+  border: 1px solid gray;
+  padding: 10px;
+}
+.input:focus{
+  outline: none;
+}
+.input::placeholder{
+  color: black;
+}
+ .label{
+  margin-right: 80px;
+ }
+ .label_div{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+ }
+
+ .button{
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+ }
+
+ .calculator{
+  margin-top: 1px;
+  padding-top: 0;
+  font-size: 70px !important;
+  line-height: 60px;
+  letter-spacing: -2px;
+  font-weight: 700 !important;
+  padding-bottom: 40px
+ }
+
+
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('../src/assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Italic';
+  src: url('../src/assets/fonts/Poppins-Italic.ttf') format('truetype');
+}
